@@ -11,320 +11,82 @@
 
 (function() {
 
-    let d = new Date();
-    let year = d.getFullYear();
-    let month = d.getMonth();
-    let monthLetter;
-    let day = d.getDay();
-    let dayLetter;
-    let hour = d.getHours();
-    let minute = d.getMinutes();
-    switch (month){
-        case 0 :
-            monthLetter = 'january'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 1 :
-            monthLetter = 'february'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 2 :
-        monthLetter = 'march'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        case 3 :
-            monthLetter = 'april'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 4 :
-            monthLetter = 'may'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 5 :
-            monthLetter = 'june'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 6 :
-            monthLetter = 'july'
-            switch (day){
-                case 0 :
-                    dayLetter = 'sunday';
-                    break;
-                case 1 :
-                    dayLetter = 'monday';
-                    break;
-                case 2 :
-                    dayLetter = 'tuesday';
-                    break;
-                case 3 :
-                    dayLetter = 'wednesday';
-                    break;
-                case 4 :
-                    dayLetter = 'thursday';
-                    break;
-                case 5 :
-                    dayLetter = 'friday';
-                    break;
-                case 6 :
-                    dayLetter = 'saturday';
-                    break;
-            } break;
-        case 7 :
-        monthLetter = 'august'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        case 8 :
-        monthLetter = 'september'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        case 9 :
-        monthLetter = 'october'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        case 10 :
-        monthLetter = 'november'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        case 11 :
-        monthLetter = 'december'
-        switch (day){
-            case 0 :
-                dayLetter = 'sunday';
-                break;
-            case 1 :
-                dayLetter = 'monday';
-                break;
-            case 2 :
-                dayLetter = 'tuesday';
-                break;
-            case 3 :
-                dayLetter = 'wednesday';
-                break;
-            case 4 :
-                dayLetter = 'thursday';
-                break;
-            case 5 :
-                dayLetter = 'friday';
-                break;
-            case 6 :
-                dayLetter = 'saturday';
-                break;
-            } break;
-        default :
-            monthLetter = 'weird stuff happening';
-            dayLetter = 'I repeat, ERROR ERROR ERROR'
-            break;
-    }
+    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    document.write(`${dayLetter} ${day} ${monthLetter} ${year} ${hour}h${minute}`)
+        const today = new Date() ;
+        var day 
+        var month 
+       const daynumber = today.getDate()
+       const year = today.getFullYear()
+       const minutes = today.getMinutes()
+       const hours = today.getHours()
+        
+         
+
+        switch(today.getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+              case 1:
+                day = "Monday";
+                break;
+              case 2:
+                 day = "Tuesday";
+                break;
+              case 3:
+                day = "Wednesday";
+                break;
+              case 4:
+                day = "Thursday";
+                break;
+              case 5:
+                day = "Friday";
+                break;
+              case 6:
+                day = "Saturday";
+          }
+          switch(today.getDay()) {
+            case 0:
+                month = "January ";
+                break;
+              case 1:
+                month = "February";
+                break;
+              case 2:
+                 month = "March";
+                break;
+              case 3:
+                month = "April";
+                break;
+              case 4:
+                month = "May";
+                break;
+              case 5:
+                month = "June";
+                break;
+              case 6:
+                month = "July";
+                case 7:
+                    month = "August";
+                    break;
+                  case 8:
+                     month = "September";
+                    break;
+                  case 9:
+                    month = "October";
+                    break;
+                  case 10:
+                    month = "November";
+                    break;
+                  case 11:
+                    month = "December";
+                   
+                 
+        
+          }
+          document.getElementById("target").innerHTML = day + " " +daynumber+ " " +month+ " " +year+ ", " + hours + ":"+ minutes; 
+
+
+    
+
 })();

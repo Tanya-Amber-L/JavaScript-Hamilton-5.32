@@ -88,7 +88,15 @@
             age: 81,
         },
     ];
-
-    // your code here
+    const arr = []
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const run = document.getElementById("run")
+    people.forEach(element => arr.push(element.age) )
+    run.addEventListener("click", () => {
+        
+        console.log(arr.reduce(reducer))
+        
+    })
+    
 
 })();

@@ -26,8 +26,10 @@
         "cherry",
     ];
 
-    // your code here
-    document.getElementById("run").addEventListener("click", function(){
-        console.log(`The fourth item is ${fruits[3]}.`);
-    });
+    var button = document.getElementById("run")
+
+    button.addEventListener("click", ()=> {
+        console.log(fruits[3])
+    })
+
 })();

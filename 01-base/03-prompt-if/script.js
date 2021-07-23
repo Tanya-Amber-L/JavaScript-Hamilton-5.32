@@ -11,6 +11,8 @@
 
 (function() {
 
-  // your code here
+  var person = prompt("Do you want some cake", "");
+  if (person != null) {
+    alert ( "More cake for me then :p !")}
 
 })();

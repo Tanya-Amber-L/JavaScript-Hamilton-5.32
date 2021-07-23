@@ -88,29 +88,13 @@
             age: 81,
         },
     ];
+    var run = document.getElementById("run")
+    run.addEventListener("click",() =>{
+    const result = people.filter(element => element.age > 18 );
+    console.log(result)
 
-    // First Solution more esthetic.
-
-    let peopleSenior = new Array();
-
-    document.getElementById('run').addEventListener('click', function(){
-      
-        people.forEach(person => person.age > 18? peopleSenior.push(`${person.firstname} ${person.lastname} ${person.age}`):console.log("Not enough old")); // ? = if : = else.
-        
-        peopleSenior.forEach(personSenior => console.log(personSenior));
-
-        alert('Check the console');
     });
 
-  // Second solution, less lines.
 
-  // document.getElementById('run').addEventListener('click', function(){
-      
-  //     let filteredPeople = people.filter(person => person.age > 18);
-  //     filteredPeople.forEach(sortperson => console.log(sortperson)); // Can be deleted.
-      
-  //         alert('Check the console');
-  //         // console.log(filteredPeople); // Can be added if you delete the forEach.
-  // });
 
 })();

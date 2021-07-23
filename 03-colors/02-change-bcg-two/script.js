@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+   
+   const boutton = document.getElementById("run")
+   
+   const background= document.querySelector(".content")
 
-    // your code here
+   
+    
+    boutton.addEventListener("click",change)
+    function change() {
+        let input = document.getElementById("color").value
+        console.log( input)
+        background.style.background =input ;
+    }
 
 })();

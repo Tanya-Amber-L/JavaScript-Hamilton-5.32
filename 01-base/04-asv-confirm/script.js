@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+    var Age = prompt("Please enter your age", "");
+    var Gender = prompt("Please enter your age (male or female) ? ", "");
+    var adress = prompt("In which town do you live in ? ", "");
+    var rez = confirm('Do you confirm does informations     Age = '+ Age +' Gender= ' + Gender + 'Adresse =' + adress);
+    
+    
+    
+    var questions = () => {   
+     
+      
+        if (rez == true ) {
+            alert("well bravo");    
+        }
+        else {
+            questions () 
+        }
+
+       }
+       questions() 
 
 })();

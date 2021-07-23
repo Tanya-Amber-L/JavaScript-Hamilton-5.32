@@ -23,7 +23,11 @@
         "raisin",
         "cerise",
     ];
+    console.log(fruits.length)
+    fruits.splice(0, 1, 'Banana');
+    fruits.splice(fruits.length-1, 1, 'Kiwi');
 
-    // your code here
+   
+
 
 })();

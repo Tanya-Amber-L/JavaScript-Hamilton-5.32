@@ -28,6 +28,13 @@
         "cerise",
     ];
 
-    // your code here
 
+    const run = document.getElementById("run");
+
+    run.addEventListener("click" , () => {
+        let unique = [...new Set(fruits)];
+        console.log(unique)
+
+    } )  
+    
 })();

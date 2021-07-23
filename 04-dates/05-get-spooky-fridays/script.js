@@ -10,7 +10,36 @@
 // You will have time to focus on it later.
 
 (function() {
+    const run = document.getElementById("run"); 
+    
+   
 
-    // your code here
+    run.addEventListener("click",change)
+   
+   function change() {
+     
+    const year = document.getElementById("year").value
+    
+    
+    
+    function numberOfFridaythe13thsIn(year) {
+        var counter = 0;
+        for (i = 1; i <= 12; i++) {
+            var d = new Date(i + "/13/" + year);                          
+            if (d.getDay() == 5) {
+                counter++;
+            }
+        }
+        alert(counter);
+
+    }
+
+
+        numberOfFridaythe13thsIn(year)  
+                
+
+
+   }
+    
 
 })();

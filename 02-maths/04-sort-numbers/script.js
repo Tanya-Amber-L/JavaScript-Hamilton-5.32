@@ -15,7 +15,21 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+       var str = document.getElementById("numbers").value;
+
+      let listOfItems = str.split(',');
+      var arr = []
+       // let i 
+       
+        
+ 
+
+            listOfItems.forEach(element => arr.unshift(parseInt(element))  );
+            console.log(arr.sort())
+        
+
+       
+
 
     });
 

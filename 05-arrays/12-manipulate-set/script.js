@@ -22,6 +22,14 @@
         "grape",
         "cherry",
     ]);
-
-    // your code here
+    console.log(fruits)
+  if(fruits.has('apple')) {
+    fruits.delete('apple');
+    fruits.add('kiwi');
+  }
+  if(fruits.has('cherry')) {
+    fruits.delete('cherry');
+    fruits.add('banana');
+  }
+  console.log(fruits)
 })();

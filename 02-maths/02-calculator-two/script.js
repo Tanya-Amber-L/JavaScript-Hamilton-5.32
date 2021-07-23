@@ -13,7 +13,40 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
-        // perform the operation
+        
+       console.log()
+
+        
+         switch(document.querySelector("button.operator")) {
+            case addition:
+                var firstop = document.getElementById("op-one").value;
+                var secondop = document.getElementById("op-two").value;
+                answer=  answer =  parseInt(firstop) + parseInt(secondop) ; 
+                alert(answer)
+              break;
+            case substraction:
+                var firstop = document.getElementById("op-one").value;
+                var secondop = document.getElementById("op-two").value;
+                answer=  answer =  parseInt(firstop) - parseInt(secondop) ; 
+                alert(answer)
+              break;
+              case  multiplication:
+                var firstop = document.getElementById("op-one").value;
+                var secondop = document.getElementById("op-two").value;
+                answer=  answer =  parseInt(firstop) * parseInt(secondop) ; 
+                alert(answer)
+                break;
+              case division:
+                var firstop = document.getElementById("op-one").value;
+                var secondop = document.getElementById("op-two").value;
+                answer=  answer =  parseInt(firstop) % parseInt(secondop) ; 
+                alert(answer)
+                break;
+           
+          } 
+          
+        
+      
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

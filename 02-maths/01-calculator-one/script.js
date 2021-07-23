@@ -10,21 +10,39 @@
 // You will have time to focus on it later.
 
 (function() {
-    // to get the value of an input: document.getElementById("element-id").value
 
+    var answer 
     document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+        let firstop = document.getElementById("op-one").value;
+        let secondop = document.getElementById("op-two").value;
+        console.log(firstop)
+        console.log(secondop)
+        answer =  parseInt(firstop) + parseInt(secondop) ;  
+        alert(answer)
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        let firstop = document.getElementById("op-one").value;
+        let secondop = document.getElementById("op-two").value;
+        console.log(firstop)
+        console.log(parseInt(firstop))
+        answer =  parseInt(firstop) - parseInt(secondop) ; 
+        alert(answer)
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+      let firstop = document.getElementById("op-one").value;
+      let secondop = document.getElementById("op-two").value;
+      answer=  answer =  parseInt(firstop) * parseInt(secondop) ; 
+      alert(answer)
+
+
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        let firstop = document.getElementById("op-one").value;
+        let secondop = document.getElementById("op-two").value;
+        answer=  answer =  parseInt(firstop) % parseInt(secondop) ; 
+        alert(answer)
     });
 })();

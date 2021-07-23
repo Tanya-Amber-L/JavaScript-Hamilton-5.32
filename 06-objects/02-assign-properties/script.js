@@ -21,10 +21,46 @@
         {id: "0008"},
         {id: "0009", available: false, user: "Anthony"},
     ];
+    console.log(computers)
     const defaultProps = {
+
+
         available: true,
         os: "linux",
         user: null,
     };
-    // your code here
+
+
+    const run = document.getElementById("run")
+
+
+    run.addEventListener("click", () => {
+        computers.forEach( availabality => {if(availabality .available === undefined){
+       
+            availabality.available = defaultProps.available 
+             
+            }
+            
+               
+           }) 
+           computers.forEach( opensource => {if(opensource.os === undefined){
+               
+            opensource.os = defaultProps.os
+             
+            }
+            
+               
+           }) 
+           computers.forEach( user => {if(user.user === undefined){
+               
+            user.user = defaultProps.user
+               
+              
+            }
+           
+               
+           })
+             console.log(computers)
+    })
+   
 })();

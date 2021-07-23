@@ -12,9 +12,15 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
+        var i 
+        
+        let text =" " ;
+        
+        for (let i = 1; i < 21; i++) {
+            text += i*i +" - " ;
+            console.log(text)
+          }
+        alert (text)
     });
 
 })();

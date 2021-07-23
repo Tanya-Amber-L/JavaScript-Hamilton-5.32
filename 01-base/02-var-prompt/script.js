@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    var person = prompt("Please enter your name", "");
+  if (person != null) {
+    alert ("Hello " + person + "! lopo")}
+    
 
 })();
