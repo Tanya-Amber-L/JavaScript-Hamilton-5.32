@@ -11,8 +11,15 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var today = new Date();
 
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    if (time < "17:30:00"){
+        document.getElementById("target").innerHTML = "hello";
+    }
+    else{
+        document.getElementById("target").innerHTML = "Good evening";
+    }
     // your code here
 
 })();
