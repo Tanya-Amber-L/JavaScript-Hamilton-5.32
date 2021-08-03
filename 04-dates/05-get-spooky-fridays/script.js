@@ -11,6 +11,7 @@
 
 
 (function() {
+<<<<<<< HEAD
     document.getElementById("run").addEventListener("click", function() {
       var year =  document.getElementById("year").value;
       console.log(year);
@@ -27,6 +28,38 @@
 
      
     });
+=======
+    const run = document.getElementById("run"); 
+    
+   
+
+    run.addEventListener("click",change)
+   
+   function change() {
+     
+    const year = document.getElementById("year").value
+    
+    
+    
+    function numberOfFridaythe13thsIn(year) {
+        var counter = 0;
+        for (i = 1; i <= 12; i++) {
+            var d = new Date(i + "/13/" + year);                          
+            if (d.getDay() == 5) {
+                counter++;
+            }
+        }
+        alert(counter);
+
+    }
+
+
+        numberOfFridaythe13thsIn(year)  
+                
+
+
+   }
+>>>>>>> 8ce3ddbdc15f373f9d4f6f60cdbe31f5509aa08f
     
 
 })();

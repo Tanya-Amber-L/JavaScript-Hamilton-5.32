@@ -21,7 +21,10 @@
         {id: "0008"},
         {id: "0009", available: false, user: "Anthony"},
     ];
+    console.log(computers)
     const defaultProps = {
+
+
         available: true,
         os: "linux",
         user: null,

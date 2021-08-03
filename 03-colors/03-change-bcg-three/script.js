@@ -10,14 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+    const setBg = () => {
+    // Math radom est utilisé pour choisir un numéro entre [0,1[
+    // tostring(16) met les objets en basses 16 math floor arrondi     
+    var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
+    
+}
 
-    // your code here
-    document.getElementById("run").addEventListener("click", function (){
-        let r = Math.floor(255*Math.random());
-        let g = Math.floor(255*Math.random());
-        let b = Math.floor(255*Math.random());
-        document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-    })
-
-
+document.getElementById("run").addEventListener("click",setBg)
 })();

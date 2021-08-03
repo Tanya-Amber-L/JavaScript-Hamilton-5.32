@@ -11,6 +11,7 @@
 
 (function() {
 
+<<<<<<< HEAD
   
 
   var questions = () => {
@@ -28,5 +29,10 @@
   }
 
   questions() 
+=======
+  var person = prompt("Do you want some cake", "");
+  if (person != null) {
+    alert ( "More cake for me then :p !")}
+>>>>>>> 8ce3ddbdc15f373f9d4f6f60cdbe31f5509aa08f
 
 })();

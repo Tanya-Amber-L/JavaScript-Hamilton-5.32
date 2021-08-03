@@ -10,17 +10,31 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
-    document.getElementById("red").addEventListener("click", function(){
-        document.body.style.backgroundColor = "red";
-    });
-    document.getElementById("green").addEventListener("click", function(){
-     document.body.style.backgroundColor = "green";
-     });
-     document.getElementById("yellow").addEventListener("click", function(){
-         document.body.style.backgroundColor = "yellow";
-     });
-     document.getElementById("blue").addEventListener("click", function(){
-         document.body.style.backgroundColor = "blue";
-     });
+
+    const red = document.getElementById("red")
+    const green = document.getElementById("green")
+    const yellow= document.getElementById("yellow")
+    const blue = document.getElementById("blue")
+    const background = document.querySelector(".content")
+
+    red.addEventListener("click",redback)
+    green.addEventListener("click",greenback)
+    yellow.addEventListener("click",yellowback)
+    blue.addEventListener("click",blueback)
+
+    function redback() {
+        background.style.background ="red"
+    }
+    function greenback() {
+        background.style.background ="green"
+    }
+    function yellowback() {
+        background.style.background ="yellow"
+    }
+    function blueback() {
+        background.style.background ="blue"
+    }
+   
+   
+
 })();

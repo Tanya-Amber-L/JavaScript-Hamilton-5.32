@@ -28,6 +28,7 @@
         "cerise",
     ];
 
+<<<<<<< HEAD
     // your code here
     document.getElementById("run").addEventListener("click", function() {
         const doublons = [...new Set(fruits)]
@@ -36,3 +37,15 @@
     
 
 })();
+=======
+
+    const run = document.getElementById("run");
+
+    run.addEventListener("click" , () => {
+        let unique = [...new Set(fruits)];
+        console.log(unique)
+
+    } )  
+    
+})();
+>>>>>>> 8ce3ddbdc15f373f9d4f6f60cdbe31f5509aa08f

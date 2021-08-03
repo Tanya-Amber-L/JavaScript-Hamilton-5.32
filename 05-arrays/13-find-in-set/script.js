@@ -21,6 +21,16 @@
         "Simon",
         "Lucas",
     ]);
+    
+    const run= document.getElementById("run")
+
+    run.addEventListener("click", () => 
+    {
+        console.log(people.size ) 
+        if(people.has('Alexandre')) {
+           console.log("he is a part of the show")
+          }
+    })
 
     document.getElementById("run").addEventListener("click", function(){
 

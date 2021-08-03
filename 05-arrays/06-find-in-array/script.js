@@ -88,15 +88,18 @@
             email: "gkeatche@google.fr",
         },
     ];
+    var run = document.getElementById("run")
 
-    const run = document.getElementById("run")
-
-    run.addEventListener('click', function(){
-        for(let i=0; i<people.length;i++){
-            if(people[i].lastname.includes("Dupont") && people[i].firstname.includes("Jean")){
-                console.log(`The mail of this person is ${people[i].email} and it's index is ${i}`);
-            }
-        }
+    run.addEventListener("click",() => {
+       people.forEach (element =>   {
+       if ( element.lastname === "Dupont" && element.firstname=== "Jean"   ) {
+           console.log(people.indexOf(element))
+       } 
+   })   
     })
+    
+   
+
+
 
 })();

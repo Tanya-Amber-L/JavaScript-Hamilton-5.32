@@ -1,4 +1,4 @@
-/* becode/javascript
+    /* becode/javascript
  *
  * /02-maths/05-factorial/script.js - 2.5: Factorielle
  *
@@ -15,18 +15,13 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        function factorial(n){
-            if (n==0){
-                return 1;
-            }
-            else{
-                return n*factorial(n-1);
-            }
-        };
-        number=parseInt(document.getElementById("number").value);
-        result=factorial(number);
-        alert(`The factorial of ${number} is ${result}`);
+        var facto = document.getElementById("number").value ;
+        
+        console.log(facto**facto)
+        var value = Math.round((facto**facto)*Math.exp(-facto)*Math.sqrt(2*Math.PI*facto))
 
+        alert ("The factorial of" +"  " + facto+"  "+"is"+"  "+ value )
+        
 
     });
 
